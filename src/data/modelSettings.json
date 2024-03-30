@@ -1,0 +1,7 @@
+{
+  "modelRepository": "EleutherAI/Pythia-1B-deduped",
+  "bitSwitch": 0,
+  "hardwareSwitch": "cpu",
+  "modelPath": "C:\\Users\\zehmi\\Desktop\\sort\\model test\\Guanaco-65B\\WizardLM-13B\\wizardLM-13B-Uncensored.ggmlv3.q4_0.bin",
+  "modelConfig": ""
+}

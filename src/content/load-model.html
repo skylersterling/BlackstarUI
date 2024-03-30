@@ -1,0 +1,38 @@
+<head>
+  <link rel="stylesheet" href="load-model.css">
+</head>
+<div class="load-model-container">
+  <h2>Model Settings</h2>
+  <p class="dummy-content">Enter the name of the model's repository on the 🤗 Huggingface Hub</p>
+  <div class="input-container">
+    <input type="text" placeholder="Example: EleutherAI/Pythia-1B" class="text-input" id="modelRepository" value="${modelSettings.modelRepository}">
+  </div>
+  <p class="dummy-content">or</p>
+  <div class="input-container">
+    <input type="file" accept=".bin, .pth, .safetensors" id="modelFile" class="file-input">
+    <label for="modelFile" class="file-button">Select your model's weight file</label>
+  </div>
+  <div class="input-container">
+    <input type="file" accept=".json" id="configFile" class="file-input">
+    <label for="configFile" class="file-button">Select your model's config file</label>
+  </div>
+  <div class="input-container">
+    <label for="bitSwitch" class="switch-label">Load in:</label>
+    <span id="bitMessage">${getBitMessage(modelSettings.bitSwitch)}</span>
+    <input type="range" min="0" max="3" step="1" id="bitSwitch" class="slider-input" value="${modelSettings.bitSwitch}">
+  </div>
+  <div class="input-container">
+    <label for="hardwareSwitch" class="switch-label">Select inference hardware:</label>
+    <div class="select-container">
+      <select id="hardwareSwitch" class="select-input">
+        <option value="cpu" ${modelSettings.hardwareSwitch === 'cpu' ? 'selected' : ''}>CPU</option>
+        <option value="cuda" ${modelSettings.hardwareSwitch === 'cuda' ? 'selected' : ''}>GPU</option>
+      </select>
+      <div class="button-container">
+        <button class="apply-button" id="applyButton">Apply</button>
+        <button class="reset-button" id="resetButton">Reset</button>
+        <button class="clear-button" id="clearButton">Clear</button>
+      </div>
+    </div>
+  </div>
+</div>

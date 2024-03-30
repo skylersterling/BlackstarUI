@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Blackstar</title>
+  <link rel="stylesheet" href="inference.css">
+</head>
+<body>
+  <div class="content-container" id="content-container"></div>
+  <div class="container">
+    <div class="sidebar">
+      <ul class="tabs">
+        <li class="tab active" id="inference-tab">Inference</li>
+        <li class="tab" id="context-settings-tab">Context</li>
+        <li class="tab" id="load-model-tab">Model</li>
+        <li class="tab" id="customization-tools-tab">Customize</li>
+        <li class="tab" id="customization-tools-tab">About</li>
+<!--    <li class="tab" id="merge-model-tab">Merge Model</li>
+        <li class="tab" id="train-model-tab">Train Model</li>
+        <li class="tab" id="quantize-model-tab">Quantize Model</li>
+        <li class="tab" id="model-architecture-tab">Model Architecture</li> -->
+      </ul>
+      <div id="buttons-container">
+        <button id="reset-context-button">Clear Context</button>
+        <button id="toggle-theme-button">Toggle Theme</button>
+      </div>
+    </div>
+    <div class="chat-container" id="chat-container">
+      <div id="placeholder-boxes" class="placeholder-boxes">
+        <div class="bigText">Blackstar</div>
+        <div class="placeholder-images">
+          <img src="../graphics/gui/chart.png">
+          <img src="../graphics/gui/sun.png">
+          <img src="../graphics/gui/qna.png">
+        </div>
+        <div class="row">
+          <div class="box">Write a story about robots in outer space.</div>
+          <div class="box">Can you suggest some fun indoor activities for a rainy day?</div>
+          <div class="box">How does blockchain technology work?</div>
+        </div>
+        <div class="row">
+          <div class="box">Write a poem about unconditional love.</div>
+          <div class="box">What are some practical tips for improving productivity at work?</div>
+          <div class="box">What is artificial intelligence?</div>
+        </div>
+        <div class="row">
+          <div class="box">Write a letter expressing gratitude to my boss for my recent promotion.</div>
+          <div class="box">Can you share some quick and healthy breakfast ideas?</div>
+          <div class="box">How do quantum computers work?</div>
+        </div>
+      </div>   
+      <div class="chat-messages" id="chat-window">
+      </div>
+      <form>
+        <button type="button" id="stop-generation-button" class="hidden"> ∎ Force Stop </button>
+        <input type="text" id="user_input" placeholder="Send a message.">
+        <button type="button" id="send-button" class="unclickable" disabled onclick="ChatBotAction(document.getElementById('user_input').value)">Send</button>
+        <h3>Models may produce inaccurate information about people, places, or facts. July 1st Release.</h3>
+      </form>        
+    </div>
+  </div>
+  <script src="../scripts/renderer.js"></script>
+</body>
+</html>

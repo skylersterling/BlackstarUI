@@ -1,0 +1,280 @@
+/* load-model settings */
+
+.content-container {
+  padding: 20px;
+  min-width: 1000px;
+  margin: 0 auto;
+  margin-left: 210px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.submit.context.button {
+  margin-left: 50%;
+}
+
+.ContextTitle {
+  font-weight: bold;
+  font-size: 3px;
+  margin-bottom: 3px;
+}
+
+input[type="range"] {
+  width: 200px;
+}
+
+/*.load-model-container {
+  font-family: Arial, sans-serif;
+  background-color: #1F1F1F;
+  padding: 30px;
+  border-radius: 30px;
+  border: 1px solid #666666;
+  margin: 2px;
+  margin-left: 10px;
+  padding-bottom: 50px;
+  margin-top: 10px;
+}*/
+
+h2 {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.dummy-content,
+.input-container {
+  color: #ffffff;
+}
+
+.select-input option {
+  color: #000000;
+}
+
+.text-input,
+.file-input,
+.slider-input,
+.select-input {
+  width: 80%;
+  padding: 4px 4px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 1px;
+  color: #000000;
+  margin: 10px;
+}
+
+.switch-label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+.input-container {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.text-input,
+.file-input,
+.slider-input,
+.select-input {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #b9b9b9;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: #000000;
+  margin: 3px;
+}
+
+.slider-input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #1F1F1F;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+
+.slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: #0075FF;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.select-input {
+  width: 300px;
+  padding: 17px;
+  border: 1px solid #bbbbbb;
+  border-radius: 30px;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: #000000;
+  position: relative;
+  margin-top: 30px;
+}
+
+
+
+
+.select-input::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1vh;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 2px solid #000000;
+  pointer-events: none;
+}
+
+.text-input::placeholder,
+.file-input::placeholder,
+.text-input,
+.select-input option:first-child {
+  text-align: center;
+  margin: 2px;
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.file-button {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #b9b9b9;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-button:hover {
+  background-color: #dddddd;
+}
+
+.select-input option {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.apply-button,
+.reset-button,
+.clear-button {
+  padding: 12px 50px;
+  margin: 0 15px;
+  font-size: 15px;
+  background-color: #0075FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+}
+
+.apply-button:hover,
+.reset-button:hover,
+.clear-button:hover {
+  background-color: rgb(187, 0, 255);
+}
+
+.unclickable {
+  background-color: #1F1F1F;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+#bitMessage {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.file-button.selected,
+.green {
+  background-color: rgb(0, 206, 0);
+  color: white;
+}
+
+@media (max-height: 850px) {
+  .content-container {
+    padding: 0px;
+    height: -200px;
+    min-width: 800px;
+    margin: 0 auto;
+    margin-left: 230px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-input::placeholder,
+  .file-input::placeholder,
+  .text-input,
+  .select-input option:first-child {
+    text-align: center;
+    margin: 0px;
+  }  
+
+  .ContextTitle {
+    margin-bottom: -1px;
+  }
+
+  .load-model-container {
+    margin-top: 5px;
+    padding-bottom: 13px;
+  }
+  
+  .input-container {
+    margin-top: 15px;
+  }
+
+  .slider-input {
+    margin-top: 20px;
+  }
+
+  .select-input {
+    margin-top: 15px;
+  }  
+  .button-container {
+    margin-top: 15px;
+  }
+}
+
+body.light-mode .load-model-container,
+body.light-mode .slider-input {
+  background-color: #0E1621 !important;
+}

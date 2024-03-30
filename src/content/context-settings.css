@@ -1,0 +1,182 @@
+/* context settings */
+
+.content-container {
+  padding: 20px;
+  width: 100%;
+  margin-left: 100px !important;
+  flex-direction: column;
+  text-align: center; 
+}
+
+.ContextLord textarea {
+  height: 500px;
+  resize: none;
+  margin-bottom: -50px !important;
+  padding: 25px;
+  width: 80%;
+  font-size: large;
+  word-wrap: normal;
+  color: white;
+  overflow: hidden;
+}
+
+#context1 {
+  margin-top: 30px;
+  flex: 1;
+  max-width: 70%;
+  border-radius: 50px;
+  border: 1px solid rgb(49, 49, 49);
+  background-color: #1F1F1F;
+  color: rgb(255, 255, 255);
+}
+
+.extra-container {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.extras {
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+  margin-bottom: 10px;
+  margin-right: 200px;
+}
+
+.extra-label {
+  color: white;
+  font-size: small;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.extra-field {
+  margin-top: 5px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid rgb(49, 49, 49);
+  background-color: #1F1F1F;
+  color: rgb(255, 255, 255);
+  resize: none;
+  overflow: hidden;
+  width: 200px;
+}
+
+.ContextTitle {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.description2 {
+  color: white;
+  font-size: medium;
+  display: inline-block;
+}
+
+.description1 {
+  margin-top: 5px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit.context.button {
+  margin-left: 50%;
+}
+
+textarea {
+  height: 150px;
+  background-color: #ddd;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: rgb(187, 0, 255);
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.slider-label,
+.slider-value {
+  margin: 0 5px;
+  color: white;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+input[type="range"] {
+  width: 200px;
+}
+
+.submit-button {
+  background-color: #0075FF;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 2vh;
+}
+
+@media (max-height: 910px) {
+  .content-container {
+    padding: 0px;
+    margin-left: 100px !important;
+  }
+
+  .ContextLord textarea {
+    height: 350px;
+    width: 50%;
+    font-size: small;
+    padding: 9px;
+    margin-top: 1vh;
+    border-radius: 20px !important;
+  }
+
+  .submit-button {
+    margin-top: -1px;
+    padding: 10px 25px;
+  }
+
+  .extra-field{
+    height: 15px;
+    width: 150px;
+    margin-top: -2px;
+  }
+
+  .extra-label {
+    margin-top: -5px;
+  }
+}
+
+body.light-mode .extra-field,
+body.light-mode #context1 {
+  background-color: #1F2937;
+  border: 1px solid #1F2937;
+}
