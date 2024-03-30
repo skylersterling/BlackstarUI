@@ -7,7 +7,7 @@
 Blackstar allows you to locally perform inference with large language models at various levels of quantization.
 This project is compatible with the Transformers library and the HuggingFace hub. 🤗🪄
 
-![Screenshot](https://github.com/Celestinian/BlackstarUI/blob/main/screenshots/1.png?raw=true)
+![Screenshot](https://github.com/skylersterling/BlackstarUI/blob/main/screenshots/1.png?raw=true)
 
 </div>
 
